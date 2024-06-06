@@ -138,4 +138,8 @@ return [
     'Error. Can\'t delete' => 'Ошибка. Не могу удалить',
     'The current password is incorrect.' => 'Текущий пароль неверен',
     'The provided credentials do not match our records.' => 'Предоставленные учетные данные не соответствуют нашим записям.',
+    'Words' => 'Слова',
+    'Word' => 'Слово',
+    'Level' => 'Уровень',
+    'Status' => 'Статус',
 ];

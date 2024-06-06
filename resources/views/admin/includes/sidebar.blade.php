@@ -30,9 +30,9 @@
         <div id="sidebar-menu">
             <ul class="metismenu list-unstyled" id="side-menu">
                 <li>
-                    <a href="#" class="waves-effect">
-                        <i class="fas fa-users"></i>
-                        <span>Product</span>
+                    <a href="{{ route('words.index') }}" class="waves-effect">
+                        <i class="uil-book-alt"></i>
+                        <span>{{ __("body.Words") }}</span>
                     </a>
                 </li>
 

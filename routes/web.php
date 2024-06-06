@@ -8,6 +8,7 @@ use App\Http\Controllers\Dashboard\LogoController;
 use App\Http\Controllers\Dashboard\ProfileController;
 use App\Http\Controllers\Dashboard\SeoController;
 use App\Http\Controllers\Dashboard\IconController;
+use App\Http\Controllers\Dashboard\WordController;
 
 /*
 |--------------------------------------------------------------------------
@@ -44,6 +45,7 @@ Route::middleware([
     Route::post('profile/update', [ProfileController::class, 'updateProfile'])->name('profile.update');
     Route::post('profile/updatePassword', [ProfileController::class, 'updatePassword'])->name('profile.updatePassword');
 
+    Route::resource('words', WordController::class)->only(['index', 'edit', 'update']);
     Route::resource('icons', IconController::class)->only(['index', 'store', 'update', 'destroy']);
     Route::resource('seos', SeoController::class)->only(['index', 'update', 'edit']);
     Route::resource('langs', LangController::class);

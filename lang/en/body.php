@@ -138,4 +138,8 @@ return [
     'Error. Can\'t delete' => 'Error. Can\'t delete',
     'The current password is incorrect.' => 'The current password is incorrect.',
     'The provided credentials do not match our records.' => 'The provided credentials do not match our records.',
+    'Words' => 'Words',
+    'Word' => 'Word',
+    'Level' => 'Level',
+    'Status' => 'Status',
 ];

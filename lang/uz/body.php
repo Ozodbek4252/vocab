@@ -138,4 +138,8 @@ return [
     'Error. Can\'t delete' => 'Xatolik. O\'chirish mumkin emas',
     'The current password is incorrect.' => 'Joriy parol noto\'g\'ri',
     'The provided credentials do not match our records.' => 'Berilgan ma\'lumotlar bizning yozuvlarimiz bilan mos kelmadi.',
+    'Words' => 'So\'zlar',
+    'Word' => 'So\'z',
+    'Level' => 'Daraja',
+    'Status' => 'Holat',
 ];
