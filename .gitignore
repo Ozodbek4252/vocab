@@ -16,7 +16,7 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
-/minible-frame-database
-minible-frame-database
+/vocab-database
+vocab-database
 /.DS_Store
 .DS_Store
