@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('level')->comment('A1, A2, B1, B2, C1, C2');
             $table->string('type')->nullable()->comment('noun, verb, adjective, adverb, etc.');
             $table->string('status')->nullable()->comment("I know, I don't know, etc.");
+            $table->boolean('duplicated')->default(false);
             $table->timestamps();
         });
     }

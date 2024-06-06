@@ -146,4 +146,6 @@ return [
     'Type' => 'Type',
     'I know' => 'I know',
     'I don\'t know' => 'I don\'t know',
+    'Uniques' => 'Uniques',
+    'With Duplicates' => 'With Duplicates',
 ];

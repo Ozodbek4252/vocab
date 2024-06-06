@@ -146,4 +146,6 @@ return [
     'Type' => 'Turi',
     'I know' => 'Bilaman',
     'I don\'t know' => 'Bilmayman',
+    'Uniques' => 'Unikal',
+    'With Duplicates' => 'Duplikatlar bilan',
 ];

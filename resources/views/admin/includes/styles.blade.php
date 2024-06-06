@@ -5,5 +5,6 @@
 <!-- App Css-->
 <link href="{{ asset('assets/css/app.min.css') }}" id="app-style" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="{{ asset('assets/libs/toastr/toastr.css') }}" />
+<link rel="shortcut icon" href="{{ asset('assets/images/favicon_io/favicon.ico') }}">
 
 @livewireStyles

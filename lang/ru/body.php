@@ -146,4 +146,6 @@ return [
     'Type' => 'Тип',
     'I know' => 'Я знаю',
     'I don\'t know' => 'Я не знаю',
+    'Uniques' => 'Уникальные',
+    'With Duplicates' => 'С дубликатами',
 ];

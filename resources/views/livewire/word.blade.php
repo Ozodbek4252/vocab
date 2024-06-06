@@ -1,19 +1,19 @@
-<tr>
+<tr @if ($word->duplicated) class="table-info" @endif>
     <th scope="row">{{ $count }}</th>
     <td>{{ $word->word }}</td>
     <td>{{ $word->guide_word }}</td>
     <td>{{ $word->level }}</td>
     <td>{{ $word->type }}</td>
     <td>
-        <div class="btn-group me-1 mt-2 status-div-{{ $word->id }}">
+        <div class="btn-group me-1 mt-2">
             @if ($word->status == null)
                 <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true"
                     aria-expanded="false">{{ __('body.I don\'t know') }}
                     <i class="mdi mdi-chevron-down"></i>
                 </button>
                 <div class="dropdown-menu">
-                    <div wire:click="changeStatus(1)" class="dropdown-item know-option"
-                        data-word-id="{{ $word->id }}">{{ __('body.I know') }}
+                    <div wire:click="changeStatus(1)" class="dropdown-item know-option">
+                        {{ __('body.I know') }}
                     </div>
                 </div>
             @else
@@ -22,8 +22,7 @@
                     <i class="mdi mdi-chevron-down"></i>
                 </button>
                 <div class="dropdown-menu">
-                    <div wire:click="changeStatus(null)" class="dropdown-item dont-know-option"
-                        data-word-id="{{ $word->id }}">
+                    <div wire:click="changeStatus(null)" class="dropdown-item dont-know-option">
                         {{ __('body.I don\'t know') }}
                     </div>
                 </div>

@@ -14,6 +14,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $level
  * @property string $type
  * @property string $status
+ * @property bool $duplicated
  * @property \Illuminate\Support\Carbon $created_at
  * @property \Illuminate\Support\Carbon $updated_at
  */
@@ -27,6 +28,7 @@ class Word extends Model
         'level',
         'type',
         'status',
+        'duplicated'
     ];
 
     protected $casts = [
@@ -34,4 +36,3 @@ class Word extends Model
         'updated_at' => 'datetime',
     ];
 }
-
