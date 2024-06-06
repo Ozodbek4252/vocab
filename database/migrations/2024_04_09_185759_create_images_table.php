@@ -1,0 +1,37 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('images', function (Blueprint $table) {
+            $table->id();
+            $table->string('imageable_id');
+            $table->string('imageable_type');
+            $table->string('path');
+            $table->string('type')->default('original')
+                ->comment('original, medium, thumbnail');
+            $table->string('size')->nullable();
+            $table->string('mime_type')->nullable()
+                ->comment('image/jpeg, image/png');
+            $table->string('extension')->nullable()
+                ->comment('jpg, png, jpeg, gif, webp, etc.');
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('images');
+    }
+};
