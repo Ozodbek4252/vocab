@@ -142,4 +142,8 @@ return [
     'Word' => 'Word',
     'Level' => 'Level',
     'Status' => 'Status',
+    'Guide Word' => 'Guide Word',
+    'Type' => 'Type',
+    'I know' => 'I know',
+    'I don\'t know' => 'I don\'t know',
 ];

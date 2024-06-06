@@ -16,8 +16,8 @@ return new class extends Migration
             $table->string('word')->comment('The word itself');
             $table->string('guide_word')->nullable()->comment('A word that helps to find the word in a dictionary');
             $table->string('level')->comment('A1, A2, B1, B2, C1, C2');
-            $table->string('type')->comment('noun, verb, adjective, adverb, etc.');
-            $table->string('status')->comment('I know, I don\'t know, etc.');
+            $table->string('type')->nullable()->comment('noun, verb, adjective, adverb, etc.');
+            $table->string('status')->nullable()->comment("I know, I don't know, etc.");
             $table->timestamps();
         });
     }

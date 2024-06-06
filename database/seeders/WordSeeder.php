@@ -2,24 +2,17 @@
 
 namespace Database\Seeders;
 
-use App\Models\Word;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Maatwebsite\Excel\Facades\Excel;
+use App\Imports\WordsImport;
 
 class WordSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
-    public function run(): void
+    public function run()
     {
-        for ($i = 0; $i < 100; $i++) {
-            Word::create([
-                'word' => fake()->word,
-                'level' => 'A1',
-                'type' => 'noun',
-                'status' => 'I know',
-            ]);
-        }
+        Excel::import(new WordsImport, public_path('vocab.xlsx'));
     }
 }

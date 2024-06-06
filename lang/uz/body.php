@@ -142,4 +142,8 @@ return [
     'Word' => 'So\'z',
     'Level' => 'Daraja',
     'Status' => 'Holat',
+    'Guide Word' => 'Qo\'llanma so\'zi',
+    'Type' => 'Turi',
+    'I know' => 'Bilaman',
+    'I don\'t know' => 'Bilmayman',
 ];
