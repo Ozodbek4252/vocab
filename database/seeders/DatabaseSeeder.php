@@ -18,7 +18,9 @@ class DatabaseSeeder extends Seeder
             LogoSeeder::class,
             SeoSeeder::class,
             IconSeeder::class,
-            WordSeeder::class,
+
+            CategorySeeder::class,
+            // WordSeeder::class,
         ]);
     }
 }

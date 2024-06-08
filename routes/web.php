@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\Dashboard\CategoryController;
 use App\Http\Controllers\Dashboard\DashboardController;
 use App\Http\Controllers\Dashboard\LangController;
 use App\Http\Controllers\Dashboard\LogoController;
@@ -45,6 +46,7 @@ Route::middleware([
     Route::post('profile/update', [ProfileController::class, 'updateProfile'])->name('profile.update');
     Route::post('profile/updatePassword', [ProfileController::class, 'updatePassword'])->name('profile.updatePassword');
 
+    Route::resource('categories', CategoryController::class)->only(['index', 'store', 'update', 'destroy']);
     Route::resource('words', WordController::class)->only(['index', 'edit', 'update']);
     Route::resource('icons', IconController::class)->only(['index', 'store', 'update', 'destroy']);
     Route::resource('seos', SeoController::class)->only(['index', 'update', 'edit']);

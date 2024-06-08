@@ -30,6 +30,12 @@
         <div id="sidebar-menu">
             <ul class="metismenu list-unstyled" id="side-menu">
                 <li>
+                    <a href="{{ route('categories.index') }}" class="waves-effect">
+                        <i class="uil-book-alt"></i>
+                        <span>{{ __("body.Categories") }}</span>
+                    </a>
+                </li>
+                <li>
                     <a href="{{ route('words.index') }}" class="waves-effect">
                         <i class="uil-book-alt"></i>
                         <span>{{ __("body.Words") }}</span>
