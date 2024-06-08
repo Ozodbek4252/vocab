@@ -36,6 +36,12 @@
                     </a>
                 </li>
                 <li>
+                    <a href="{{ route('files.index') }}" class="waves-effect">
+                        <i class="uil-book-alt"></i>
+                        <span>{{ __("body.Files") }}</span>
+                    </a>
+                </li>
+                <li>
                     <a href="{{ route('words.index') }}" class="waves-effect">
                         <i class="uil-book-alt"></i>
                         <span>{{ __("body.Words") }}</span>

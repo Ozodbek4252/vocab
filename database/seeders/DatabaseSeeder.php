@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
             IconSeeder::class,
 
             CategorySeeder::class,
+            FileSeeder::class,
             // WordSeeder::class,
         ]);
     }

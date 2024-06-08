@@ -148,4 +148,11 @@ return [
     'I don\'t know' => 'Bilmayman',
     'Uniques' => 'Unikal',
     'With Duplicates' => 'Duplikatlar bilan',
+    'Files' => 'Fayllar',
+    'Create File' => 'Fayl yaratish',
+    'Update File' => 'Faylni yangilash',
+    'Delete File' => 'Faylni o\'chirish',
+    'Allowed types' => 'Ruxsat etilgan turlar: pdf',
+    'Page' => 'Sahifa',
+    'Size' => 'Hajmi',
 ];

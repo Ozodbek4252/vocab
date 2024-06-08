@@ -13,12 +13,16 @@ return new class extends Migration
     {
         Schema::create('files', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('fileable_id');
-            $table->string('fileable_type');
             $table->string('name');
-            $table->string('extension')->comment('Like: jpg, png, pdf, etc.');
-            $table->string('type')->nullable()->comment('Like: image, certificate');
+            $table->string('path');
+            $table->string('slug')->unique();
+            $table->unsignedBigInteger('size');
+            $table->unsignedBigInteger('page')->default(1);
+            $table->string('extension')->comment('Like: pdf, xlsx, docs, etc.');
             $table->timestamps();
+
+            $table->index('name');
+            $table->index('slug');
         });
     }
 

@@ -29,5 +29,8 @@ RUN docker-php-ext-configure pdo_mysql && \
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/doc/*
 
+# Increase PHP memory limit
+RUN echo "memory_limit=512M" > /usr/local/etc/php/conf.d/memory-limit.ini
+
 # Install npm packages globally
 RUN npm install -g npm

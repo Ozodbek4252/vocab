@@ -148,4 +148,11 @@ return [
     'I don\'t know' => 'Я не знаю',
     'Uniques' => 'Уникальные',
     'With Duplicates' => 'С дубликатами',
+    'Files' => 'Файлы',
+    'Create File' => 'Создать файл',
+    'Update File' => 'Обновить файл',
+    'Delete File' => 'Удалить файл',
+    'Allowed types' => 'Разрешенные типы: pdf',
+    'Page' => 'Страница',
+    'Size' => 'Размер',
 ];

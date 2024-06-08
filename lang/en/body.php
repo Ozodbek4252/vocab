@@ -148,4 +148,11 @@ return [
     'I don\'t know' => 'I don\'t know',
     'Uniques' => 'Uniques',
     'With Duplicates' => 'With Duplicates',
+    'Files' => 'Files',
+    'Create File' => 'Create File',
+    'Update File' => 'Update File',
+    'Delete File' => 'Delete File',
+    'Allowed types' => 'Allowed types: pdf',
+    'Page' => 'Page',
+    'Size' => 'Size',
 ];
